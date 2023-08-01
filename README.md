@@ -50,7 +50,7 @@ Additionally, for the Max Patch application to receive and process the OSC messa
 
 - The audio input is assumed to have a sample rate of 48000 Hz. If the input sample rate is different, the script will automatically resample it to 24000 Hz using the **resampy** library.
 
-- The MLP model file **mss23_hyperas.h5** should be trained and saved separately using a compatible version of TensorFlow and Keras.
+- The MLP model file **mss23_hyperas.h5** should be trained and saved separately using a compatible version of TensorFlow and Keras. The training code is not provided in this repository.
 
 - OSC messages are sent to the IP address "127.0.0.1" and port number 5005. Make sure the receiving application (Max Patch) is configured to listen to OSC messages on this address and port.
 
