@@ -246,7 +246,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 404.800000000000182, 83.0, 22.0 ],
+					"patching_rect" : [ 987.0, 431.10000000000025, 83.0, 22.0 ],
 					"text" : "prepend open"
 				}
 
@@ -258,7 +258,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 962.0, 294.000000000000114, 55.0, 22.0 ],
+					"patching_rect" : [ 987.0, 320.300000000000182, 55.0, 22.0 ],
 					"text" : "zl slice 1"
 				}
 
@@ -270,7 +270,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 256.000000000000114, 143.0, 22.0 ],
+					"patching_rect" : [ 987.0, 282.300000000000182, 143.0, 22.0 ],
 					"text" : "fromsymbol @separator /"
 				}
 
@@ -282,7 +282,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 325.300000000000182, 129.0, 22.0 ],
+					"patching_rect" : [ 987.0, 351.60000000000025, 129.0, 22.0 ],
 					"text" : "tosymbol @separator /"
 				}
 
@@ -294,7 +294,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "", "bang" ],
-					"patching_rect" : [ 962.0, 165.800000000000068, 313.0, 22.0 ],
+					"patching_rect" : [ 987.0, 192.100000000000136, 313.0, 22.0 ],
 					"text" : "t b l b"
 				}
 
@@ -306,7 +306,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1256.0, 325.300000000000182, 71.0, 22.0 ],
+					"patching_rect" : [ 1281.0, 351.60000000000025, 71.0, 22.0 ],
 					"text" : "/realtime.sh"
 				}
 
@@ -318,7 +318,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 366.300000000000182, 81.0, 22.0 ],
+					"patching_rect" : [ 987.0, 392.60000000000025, 81.0, 22.0 ],
 					"text" : "sprintf /%s%s"
 				}
 
@@ -331,8 +331,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 196.300000000000068, 166.0, 49.0 ],
-					"text" : "\"Macintosh HD:/Users/nicolasbrochec/Desktop/mss23-talk-iptr\""
+					"patching_rect" : [ 987.0, 222.600000000000136, 166.0, 49.0 ],
+					"text" : "\"Macintosh HD:/Users/nicolasbrochec/Documents/GitHub/mss23-iptr\""
 				}
 
 			}
@@ -343,7 +343,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 127.300000000000068, 87.0, 22.0 ],
+					"patching_rect" : [ 987.0, 153.600000000000136, 87.0, 22.0 ],
 					"text" : "filepath default"
 				}
 
@@ -356,7 +356,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 962.0, 446.700000000000045, 60.0, 36.0 ],
+					"patching_rect" : [ 987.0, 473.000000000000114, 60.0, 36.0 ],
 					"saved_object_attributes" : 					{
 						"shell" : "(default)"
 					}
@@ -1899,7 +1899,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 991.0, 97.800000000000068, 188.0, 23.0 ],
+					"patching_rect" : [ 1016.0, 124.100000000000136, 188.0, 23.0 ],
 					"text" : "リアルタイムのコードを開始する"
 				}
 
@@ -1910,7 +1910,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 991.0, 81.800000000000068, 164.0, 20.0 ],
+					"patching_rect" : [ 1016.0, 108.100000000000136, 164.0, 20.0 ],
 					"text" : "Launch realtime Python code"
 				}
 
@@ -1923,7 +1923,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 962.0, 87.800000000000068, 24.0, 24.0 ]
+					"patching_rect" : [ 987.0, 114.100000000000136, 24.0, 24.0 ]
 				}
 
 			}
@@ -1983,19 +1983,20 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 465.0, 3.0, 45.0, 45.0 ]
+					"patching_rect" : [ 481.0, 703.599999999999909, 45.0, 45.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 14.0,
+					"fontname" : "Myanmar Sangam MN",
+					"fontsize" : 16.363063401705212,
 					"id" : "obj-76",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.0, 25.0, 208.0, 26.0 ],
+					"patching_rect" : [ 369.0, 25.505808848362037, 245.0, 34.0 ],
 					"text" : "ブロシェック・ニコラ　2023年"
 				}
 
@@ -2003,12 +2004,13 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 14.0,
+					"fontname" : "Myanmar Sangam MN",
+					"fontsize" : 17.669101345603369,
 					"id" : "obj-75",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.0, 3.0, 162.0, 22.0 ],
+					"patching_rect" : [ 369.0, 1.485714285714286, 183.0, 34.0 ],
 					"text" : "Nicolas Brochec - 2023"
 				}
 
@@ -2016,26 +2018,26 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 14.0,
+					"fontsize" : 18.922504362373417,
 					"id" : "obj-52",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.0, 25.0, 120.0, 26.0 ],
-					"text" : "楽器奏法自動判別"
+					"patching_rect" : [ 3.0, 25.0, 199.0, 33.0 ],
+					"text" : "フルート奏法自動判別"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 14.0,
+					"fontsize" : 18.27809870991949,
 					"id" : "obj-9",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.0, 3.0, 187.0, 22.0 ],
-					"text" : "Automatic IPT Recognition"
+					"patching_rect" : [ 3.0, 0.485714285714286, 364.0, 27.0 ],
+					"text" : "Automatic Flute Techniques Recognition"
 				}
 
 			}
@@ -2322,7 +2324,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
-					"midpoints" : [ 1265.5, 362.050000000000068, 1033.5, 362.050000000000068 ],
+					"midpoints" : [ 1290.5, 388.350000000000136, 1058.5, 388.350000000000136 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
