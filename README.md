@@ -1,4 +1,4 @@
-# Real-time Audio Classification of Flute using MLP
+# Real-time Audio Classification of Flute Techniques using MLP
 
 ## Description
 
@@ -21,6 +21,7 @@ You can install these dependencies using the provided `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
 ```
+Additionally, for the Max Patch application to receive and process the OSC messages and launch Python code, you need to have the [https://github.com/jeremybernstein/shell](shell) external object for Max installed. Make sure you have the "shell" object configured and available in your Max environment.
 
 ## Usage
 
@@ -56,7 +57,7 @@ This script is licensed under the GNU General Public License version 3.0 (GPL-3.
 
 ## Contact Information
 
-For questions or inquiries, please contact Nicolas Brochec at [nicolas.brochec@pm.me](mailto:nicolas.brochec@pm.me).
+For questions or inquiries, please contact me.
 
 ---
 
