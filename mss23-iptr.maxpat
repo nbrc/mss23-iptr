@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 24.454985614418941,
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 987.0, 3.0, 377.0, 34.0 ],
+					"text" : "https://github.com/nbrc/mss23-iptr"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-69",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -2350,7 +2362,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "class.txt",
-				"bootpath" : "~/Desktop/mss23-talk-iptr",
+				"bootpath" : "~/Documents/GitHub/mss23-iptr",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
