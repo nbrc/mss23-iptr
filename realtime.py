@@ -1,11 +1,11 @@
 #############################################################################
-# realtimeProcessCNN+RNN.py 
+# realtime.py 
 # Nicolas Brochec, TOKYO UNIVERSITY OF THE ARTS
 # ブロシェック・ニコラ、東京藝術大学　音楽音響創造科
 # GPL-3.0 license
 #############################################################################
 # Code description:
-# Load a CNN+RNN model and predict class and values from audio input in real-time. 
+# Load a MLP model and predict class and values from audio input in real-time. 
 #############################################################################
 
 
