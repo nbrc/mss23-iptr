@@ -1,0 +1,15 @@
+1, ordinario;
+2, play-and-sing;
+3, trill;
+4, aeolian-and-ordinario;
+5, aeolian;
+6, multiphonics;
+7, pizzicato;
+8, flatterzunge;
+9, tongue-ram;
+10, staccato;
+11, whistle-tones-sweeping;
+12, key-click;
+13, whistle-tones;
+14, sforzando-fortepiano;
+15, harmonic;
