@@ -21,7 +21,7 @@ You can install these dependencies using the provided `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
 ```
-Additionally, for the Max Patch application to receive and process the OSC messages and launch Python code, you need to have the [https://github.com/jeremybernstein/shell](shell) external object for Max installed. Make sure you have the "shell" object configured and available in your Max environment.
+Additionally, for the Max Patch application to receive and process the OSC messages and launch Python code, you need to have the [shell](https://github.com/jeremybernstein/shell) external object for Max installed. Make sure you have the "shell" object configured and available in your Max environment.
 
 ## Usage
 
