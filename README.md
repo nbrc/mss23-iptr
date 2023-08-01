@@ -58,6 +58,7 @@ Additionally, for the Max Patch application to receive and process the OSC messa
 
 - During periods of silence (no audio input), the script waits for 0.25 seconds before checking for new audio data.
 
+
 ## License
 
 This script is licensed under the GNU General Public License version 3.0 (GPL-3.0). You can find the full text of the license in the **LICENSE** file.
@@ -68,4 +69,9 @@ For questions or inquiries, please contact me.
 
 ---
 
-Feel free to modify the contact information, usage instructions, or any other details in the README as needed. Additionally, you can add sections like "Acknowledgments" or "References" if required.
+## Disclaimer
+
+**This real-time audio classification script and its underlying MLP model are provided purely for experimental and educational purposes. The script aims to demonstrate the real-time audio classification capabilities using a Multi-Layer Perceptron model. However, it is essential to note that the current model suffers from a lack of precision and may not provide accurate predictions in all scenarios. As with any experimental project, it is subject to limitations and may require further refinement to achieve higher accuracy. Users are encouraged to use this script with caution and should not rely on its predictions for critical or sensitive applications.**
+
+---
+
