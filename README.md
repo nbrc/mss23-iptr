@@ -57,8 +57,6 @@ Additionally, for the Max Patch application to receive and process the OSC messa
 
 - The script is optimized for a buffer size of 512 samples.
 
-- During periods of silence (no audio input), the script waits for 0.25 seconds before checking for new audio data.
-
 ## Recognized Techniques
 
 The **realtime.py** script using the MLP model can recognize the following flute playing techniques:
