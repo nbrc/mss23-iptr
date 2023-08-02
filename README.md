@@ -49,7 +49,7 @@ Additionally, for the Max Patch application to receive and process the OSC messa
 
 ## Important Notes
 
-- The audio input is assumed to have a sample rate of 48000 Hz. If the input sample rate is different, the script will automatically resample it to 24000 Hz using the **resampy** library.
+- The audio input is assumed to have a sample rate of 48000 Hz. If the input sample rate is different, the script will automatically resample it to 24000 Hz using the **resampy** library. If you are running with a different sample rate, please modify ```sampleRate``` in the ```realtime.py``` script.
 
 - The MLP model file **mss23_hyperas.h5** should be trained and saved separately using a compatible version of TensorFlow and Keras. The training code is not provided in this repository.
 
