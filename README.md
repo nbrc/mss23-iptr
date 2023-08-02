@@ -62,16 +62,21 @@ Additionally, for the Max Patch application to receive and process the OSC messa
 
 The **realtime.py** script using the MLP model can recognize the following flute playing techniques:
 
-||---------------------------------||---------------------------------|
-|1| aeolian                        |9| key-click                       |
-|2| play-and-sing (+play-and-sing-unison)|10| trill (trill-minor-second-up+trill-major-second-up) |
-|3| aeolian-and-ordinario          |11| multiphonics                    |
-|4| sforzando (+fortepiano)        |12| whistle-tones                   |
-|5| flatterzunge                   |13| ordinario (+note-lasting)       |
-|6| staccato                       |14| whistle-tones-sweeping          |
-|7| harmonic-fingering             |15| pizzicato                       |
-|8| tongue-ram                     |  |								 |
-||---------------------------------||---------------------------------|
+1. aeolian
+2. play-and-sing (+play-and-sing-unison)
+3. aeolian-and-ordinario
+4. sforzando (+fortepiano)
+5. flatterzunge
+6. staccato
+7. harmonic-fingering
+8. tongue-ram
+9. key-click
+10. trill (trill-minor-second-up+trill-major-second-up)
+11. multiphonics
+12. whistle-tones
+13. ordinario (+note-lasting)
+14. whistle-tones-sweeping
+15. pizzicato
 
 Please note that the recognition of these techniques is based on the capabilities of the pre-trained MLP model used in the script. The model's precision may be limited, and the recognition performance can vary depending on the input audio and specific playing styles. Users are encouraged to experiment with the script and the model, keeping in mind the disclaimer provided in the README.
 
