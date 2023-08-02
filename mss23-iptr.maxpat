@@ -1930,12 +1930,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-94",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.5, 505.800000000000068, 81.0, 60.0 ],
-					"text" : "sent to Python Code through LoopBack"
+					"patching_rect" : [ 29.5, 505.800000000000068, 81.0, 74.0 ],
+					"text" : "sent to Python Code through LoopBack or\nequivalent"
 				}
 
 			}
@@ -1983,7 +1983,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 481.0, 703.599999999999909, 45.0, 45.0 ]
+					"patching_rect" : [ 514.0, 703.599999999999909, 45.0, 45.0 ]
 				}
 
 			}

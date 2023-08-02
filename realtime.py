@@ -1,7 +1,7 @@
 #############################################################################
 # realtime.py 
 # Nicolas Brochec, TOKYO UNIVERSITY OF THE ARTS
-# ブロシェック・ニコラ、東京藝術大学　音楽音響創造科
+# ブロシェック・ニコラ、東京藝術大学　音楽音響創造科　博士課程一年生
 # GPL-3.0 license
 #############################################################################
 # Code description:
@@ -18,7 +18,7 @@ from pythonosc.dispatcher import Dispatcher
 import resampy
 
 # =========================================================================================
-# LOAD MY MODEL
+# LOAD TRAINED MODEL
 # It was trained previously
 
 pathModels = os.path.abspath(os.path.join(os.path.dirname(__file__)))
@@ -29,12 +29,15 @@ print("M O D E L", lastModel  ,"H A S   B E E N   L O A D E D!")
 
 # =========================================================================================
 # GLOBAL FUNCTION DECLARATIONS
+
+# Get Spectrogram
 def get_spectrogram(x):
     melSpec = librosa.feature.melspectrogram(y=x, sr=sampleRate, n_fft=n_fft, hop_length=hop_length)
     melSpec = librosa.power_to_db(melSpec)
     spectrogram = scale_minmax(melSpec, 0, 1.).astype("float32")
     return spectrogram
 
+# Normalize spectrogram
 def scale_minmax(X, min=0.0, max=1.0):
     if ((X.max()-X.min()) == 0):
         upsilon = 0.00001
@@ -55,6 +58,7 @@ sampleRate = 48000
 n_fft = 2048
 hop_length = 512
 buffer = 512
+buffer_size = buffer*2
 
 # Instantiate PyAudio
 audioFlux = pyaudio.PyAudio() 
@@ -87,7 +91,7 @@ def send_OSC(classProb, predictedClass):
     client.send(classMSG)
 
 # =========================================================================
-# FEATURE RETRIEVAL FROM INCOMING AUDIO SIGNAL
+# PROCESS INCOMING AUDIO SIGNAL
 
 cumulativeAudio = np.zeros(6656,)
 
@@ -98,10 +102,10 @@ def callback(in_data, frame_count, time_info, flag):
     audioSamples = resample_sound(audioSamples, sampleRate, 24000)
     concate = np.concatenate((cumulativeAudio, audioSamples), axis=0)
     
-    buffer_size = math.floor(14*buffer)
-    if concate.shape[0] >= buffer_size:
-        # Ensure we use the most recent buffer_size samples
-        concate = concate[-buffer_size:]
+    samples_to_process = math.floor(14*buffer)
+    if concate.shape[0] >= samples_to_process:
+        # Ensure we use the most recent samples
+        concate = concate[-samples_to_process:]
         
         realtimeSpec = get_spectrogram(concate).flatten().reshape(1, 1920)
     
@@ -121,7 +125,7 @@ def callback(in_data, frame_count, time_info, flag):
             time.sleep(0.25)
     
     # Update cumulativeAudio with the latest audio samples
-    cumulativeAudio = concate[-buffer_size:]
+    cumulativeAudio = concate[-samples_to_process:]
     
     return None, pyaudio.paContinue
 
@@ -134,7 +138,7 @@ audioStream = audioFlux.open(format=pyaudio.paFloat32,
                  input=True,
                  input_device_index=1,
                  stream_callback=callback,
-                 frames_per_buffer=1024) # 1sec of buffer
+                 frames_per_buffer=buffer_size)
 
 audioStream.start_stream()
 
