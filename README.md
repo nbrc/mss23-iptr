@@ -41,6 +41,7 @@ Additionally, for the Max Patch application to receive and process the OSC messa
    ```bash
    python realtime.py
    ```
+or run it through shell object in the provided max patch ```mss23-iptr.maxpatch```
 
 4. The script will open the audio stream and start processing the incoming audio input in real-time. If the audio stream is active and audio is present, the script will predict the audio class and values using the pre-trained MLP model. The results will be sent to a Max Patch application using OSC messages.
 
