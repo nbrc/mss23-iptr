@@ -58,6 +58,28 @@ Additionally, for the Max Patch application to receive and process the OSC messa
 
 - During periods of silence (no audio input), the script waits for 0.25 seconds before checking for new audio data.
 
+## Recognized Techniques
+
+The **realtime.py** script using the MLP model can recognize the following flute playing techniques:
+
+1. aeolian
+2. play-and-sing
+3. aeolian-and-ordinario
+4. sforzando
+5. flatterzunge
+6. staccato
+7. harmonic-fingering
+8. tongue-ram
+9. key-click
+10. trill
+11. multiphonics
+12. whistle-tones
+13. ordinario
+14. whistle-tones-sweeping
+15. pizzicato
+
+Please note that the recognition of these techniques is based on the capabilities of the pre-trained MLP model used in the script. The model's precision may be limited, and the recognition performance can vary depending on the input audio and specific playing styles. Users are encouraged to experiment with the script and the model, keeping in mind the disclaimer provided in the README.
+
 ## References
 
 1. Brochec, Nicolas and Tanaka, Tsubasa. "ミクスト音楽のためのフルート奏法自動判別手法の検討" (Investigation of Automatic Flute Playing Technique Recognition for Mixed Music). *Japanese Society of Sonic Arts*, vol. 14, no. 3, Dec 2022, pp. 31-34. [PDF](https://hal.science/hal-04073680/file/6.Nicolas.pdf).
