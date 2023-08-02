@@ -55,8 +55,6 @@ Additionally, for the Max Patch application to receive and process the OSC messa
 
 - OSC messages are sent to the IP address "127.0.0.1" and port number 5005. Make sure the receiving application (Max Patch) is configured to listen to OSC messages on this address and port.
 
-- The script is optimized for a buffer size of 512 samples.
-
 ## Recognized Techniques
 
 The **realtime.py** script using the MLP model can recognize the following flute playing techniques:
