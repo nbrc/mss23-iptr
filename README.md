@@ -6,7 +6,7 @@
 
 ## Model Inputs and Outputs
 ### Model Inputs:
-The model expects audio spectrogram data as input, represented as a 2-dimensional numpy array with the shape (1, 1920). The spectrogram is computed on 15 frames of 512 samples using the Mel-Log-Spectrogram transformation with a sampling rate of 24000 Hz, 2048 samples per Fourier transform (n_fft), and a hop length of 512 samples.
+The model expects audio spectrogram data as input, represented as a 2-dimensional numpy array with the shape (1, 1920). The spectrogram is computed on 15 frames of 512 samples using the Mel-Log-Spectrogram transformation with a sampling rate of 24000 Hz, computed on a 2048 samples window (n_fft), and a hop length of 512 samples.
 
 ### Model Outputs:
 The MLP model predicts the audio class probabilities for 15 different classes. The predicted class probabilities are represented as a 1-dimensional numpy array with a length of 15. Each value in the array represents the probability of the audio belonging to the corresponding class.
@@ -41,6 +41,7 @@ Additionally, for the Max Patch application to receive and process the OSC messa
    ```bash
    python realtime.py
    ```
+   (or run it through shell object in the provided max patch ```mss23-iptr.maxpatch```)
 
 4. The script will open the audio stream and start processing the incoming audio input in real-time. If the audio stream is active and audio is present, the script will predict the audio class and values using the pre-trained MLP model. The results will be sent to a Max Patch application using OSC messages.
 
@@ -48,15 +49,11 @@ Additionally, for the Max Patch application to receive and process the OSC messa
 
 ## Important Notes
 
-- The audio input is assumed to have a sample rate of 48000 Hz. If the input sample rate is different, the script will automatically resample it to 24000 Hz using the **resampy** library.
+- The audio input is assumed to have a sample rate of 48000 Hz. If the input sample rate is different, the script will automatically resample it to 24000 Hz using the **resampy** library. If you are running with a different sample rate, please modify ```sampleRate``` in the ```realtime.py``` script.
 
 - The MLP model file **mss23_hyperas.h5** should be trained and saved separately using a compatible version of TensorFlow and Keras. The training code is not provided in this repository.
 
 - OSC messages are sent to the IP address "127.0.0.1" and port number 5005. Make sure the receiving application (Max Patch) is configured to listen to OSC messages on this address and port.
-
-- The script is optimized for a buffer size of 512 samples.
-
-- During periods of silence (no audio input), the script waits for 0.25 seconds before checking for new audio data.
 
 ## Recognized Techniques
 
