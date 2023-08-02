@@ -6,7 +6,7 @@
 
 ## Model Inputs and Outputs
 ### Model Inputs:
-The model expects audio spectrogram data as input, represented as a 2-dimensional numpy array with the shape (1, 1920). The spectrogram is computed on 15 frames of 512 samples using the Mel-Log-Spectrogram transformation with a sampling rate of 24000 Hz, 2048 samples per Fourier transform (n_fft), and a hop length of 512 samples.
+The model expects audio spectrogram data as input, represented as a 2-dimensional numpy array with the shape (1, 1920). The spectrogram is computed on 15 frames of 512 samples using the Mel-Log-Spectrogram transformation with a sampling rate of 24000 Hz, computed on a 2048 samples window (n_fft), and a hop length of 512 samples.
 
 ### Model Outputs:
 The MLP model predicts the audio class probabilities for 15 different classes. The predicted class probabilities are represented as a 1-dimensional numpy array with a length of 15. Each value in the array represents the probability of the audio belonging to the corresponding class.
